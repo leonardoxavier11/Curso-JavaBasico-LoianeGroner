@@ -76,8 +76,7 @@ public class ControleContas {
 		return "Conta não encontrada";
 	}
 
-	public static String localizarProjetarPoupanca(int numContaProcurado) { // Fazer a verificação do tipo de conta, se
-																			// é "poupança"
+	public static String localizarProjetarPoupanca(int numContaProcurado) {
 		try (Scanner scan = new Scanner(System.in)) {
 			System.out.println("Quantos meses você quer projetar?");
 			int meses = scan.nextInt();
@@ -85,12 +84,19 @@ public class ControleContas {
 			for (Conta conta : contas) {
 				if (conta.getNumConta() == (numContaProcurado)) {
 					System.out.println("Conta encontrada: " + conta);
-					ContaPoupanca contaPoupanca = (ContaPoupanca) conta;// Fazendo o casting da variável para classe
-																		// ContaPoupanca, conseguimos acessar o método
-																		// especifico dessa classe
+
+					if (conta instanceof ContaPoupanca) {
+						ContaPoupanca contaPoupanca = (ContaPoupanca) conta;
+						contaPoupanca.calcularNovoSaldoAposMeses(meses);
+						return "O novo saldo após o rendimento é de: R$ " + conta.getSaldo();
+					} else {
+						return "Conta não é tipo poupança";
+					}
+					// Fazendo o casting da variável para classe
+					// ContaPoupanca, conseguimos acessar o método
+					// especifico dessa classe
 //				conta.calcularNovoSaldoAposMeses(meses); 
-					contaPoupanca.calcularNovoSaldoAposMeses(meses);
-					return "O novo saldo após o rendimento é de: R$ " + conta.getSaldo();
+
 				}
 			}
 		}

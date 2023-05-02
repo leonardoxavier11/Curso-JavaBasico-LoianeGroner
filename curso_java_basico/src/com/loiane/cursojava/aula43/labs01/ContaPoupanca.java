@@ -9,7 +9,7 @@ public class ContaPoupanca extends Conta {
 		super(nomeCliente, saldo);
 		super.setTipoConta(TIPOCONTA); // Não entendi a necessidade dessa linha, mas caso não exista o retorno é
 										// "null".
-		System.out.println("Você criou uma " + TIPOCONTA + " que rende " + (100 * rendimento) + "% ao mês\n");
+		System.out.println("Você criou uma " + TIPOCONTA + " que rende " + (100 * rendimento) + "% ao mês\n"+ "numero: " + this.getNumConta());
 	}
 
 	public String getTipo() {

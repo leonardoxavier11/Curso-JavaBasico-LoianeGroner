@@ -38,7 +38,7 @@ public class Testa01 {
 
 							ContaPoupanca conta = new ContaPoupanca(nome, saldo);
 							ControleContas.setConta(conta);
-//						ControleContas.setContasPoupancas(conta);
+//							ControleContas.setContasPoupancas(conta);
 						} else if (opcao == 2) {
 							System.out.println("Entre com seu nome e saldo inicial");
 							String nome = scan.nextLine();
@@ -48,7 +48,7 @@ public class Testa01 {
 							ContaEspecial conta = new ContaEspecial(nome, saldo);
 							ControleContas.setConta(conta);
 						} else if (opcao == 3) {
-							System.out.println("Saindo do cadastro de contas e voltar ao menu inicial\n");
+							System.out.println("Saindo do cadastro de contas e voltando ao menu inicial\n");
 						} else {
 							System.out.println("Opção inválida, tente novamente\n");
 						}
@@ -56,7 +56,7 @@ public class Testa01 {
 					} while (opcao != 3);
 					break;
 				case 2:
-//				System.out.println(ControleContas.status());
+//					System.out.println(ControleContas.status());
 					ControleContas.status();
 					break;
 				case 3:
@@ -83,6 +83,7 @@ public class Testa01 {
 					break;
 				}
 			} while (opcao != 9);
+
 		}
 
 	}
