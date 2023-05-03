@@ -50,6 +50,7 @@ public class ControleContas {
 		try (Scanner scan = new Scanner(System.in)) {
 			System.out.println("Quanto você quer sacar?");
 			double valor = scan.nextDouble(); // Adicionar verificação para saque maior que 0.0
+			scan.nextLine();
 			for (Conta conta : contas) {
 				if (conta.getNumConta() == (numContaProcurado)) {
 					System.out.println("Conta encontrada: " + conta);
@@ -58,6 +59,7 @@ public class ControleContas {
 //				return null 
 				}
 			}
+			scan.close();
 		}
 		return "Conta não encontrada";
 	}
@@ -80,7 +82,7 @@ public class ControleContas {
 		try (Scanner scan = new Scanner(System.in)) {
 			System.out.println("Quantos meses você quer projetar?");
 			int meses = scan.nextInt();
-
+			scan.nextLine();
 			for (Conta conta : contas) {
 				if (conta.getNumConta() == (numContaProcurado)) {
 					System.out.println("Conta encontrada: " + conta);
@@ -99,6 +101,7 @@ public class ControleContas {
 
 				}
 			}
+			scan.close();
 		}
 		return "Conta não encontrada";
 	}
