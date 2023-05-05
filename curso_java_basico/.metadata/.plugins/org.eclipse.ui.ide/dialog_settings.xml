@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\leona\Documents\GitHub\Oracle-Next-Education\Java-e-Orientacao-a-Objetos-T4\Curso-Java-Basico-Loiane-Groner\curso_java_basico\src\com\loiane\cursojava"/>
+			<item value="C:\Users\leona\Documents\GitHub\Oracle-Next-Education\Java-e-Orientacao-a-Objetos-T4\Curso-Java-Basico-Loiane-Groner\curso_java_basico\src\com\loiane\cursojava\aula43"/>
+			<item value="C:\Users\leona\Documents\GitHub\Curso-JavaBasico-LoianeGroner\curso_java_basico\src"/>
 			<item value="C:\Users\leona\Documents\GitHub\Oracle-Next-Education\Java-e-Orientacao-a-Objetos-T4\Curso-Java-Basico-Loiane-Groner\curso_java_basico"/>
 			<item value="C:\Users\leona\Documents\GitHub\Curso-JavaBasico-LoianeGroner\curso_java_basico"/>
 		</list>
